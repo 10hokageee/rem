@@ -3,3 +3,56 @@
 @import 'global';
 @import 'media';
 @import 'reset';
+
+.body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.info-list {
+  background-color:  rgba(26, 28, 31, 0.97);
+  border: 2px solid #fff;
+  padding: 50px;
+  border-radius: 5px;
+  flex-grow: 1;
+  max-height: 222px;
+  max-width: 355px;
+  margin-top: auto;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__item {
+    padding: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out ;
+    border: 1px solid #fff;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &:hover {
+      background-color: #c4c4c4;
+      border: 1px solid transparent;
+      color: #000;
+    }
+  }
+}
+
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #c4c4c4;
+  margin-top: auto;
+  width: 100%;
+  color: #c4c4c4;
+}
+
